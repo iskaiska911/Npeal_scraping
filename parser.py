@@ -81,7 +81,7 @@ def item_parse(url,headers):
             {"key": "washingInstruction", "value": "", "type": "text"},  # You can fill this with relevant data
             {"key": "isSizeAvailable", "value": "1", "type": "text"},
             {"key": "quantity", "value": str(variant['quantity_rule']['min']), "type": "text"},
-            {"key": "sizeId", "value": "", "type": "text", "disabled": True},
+            {"key": "sizeId", "value": variant['title'], "type": "text", "disabled": True},
             {"key": "onSizePrice", "value": "", "type": "text", "disabled": True}
         ]
         result_list.append(result)
